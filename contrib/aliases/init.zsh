@@ -38,3 +38,10 @@ md5check() { md5sum "$1" | grep "$2";} #md5sum file, compare to md5sum as second
 
 #ssh aliases
 alias sagent="eval `ssh-agent`"
+
+#rsync aliases (from omz rsync)
+alias rsync-copy="rsync -avz --progress -h"
+alias rsync-move="rsync -avz --progress -h --remove-source-files"
+alias rsync-update="rsync -avzu --progress -h"
+alias rsync-synchronize="rsync -avzu --delete --progress -h"
+
