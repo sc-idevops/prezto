@@ -40,6 +40,7 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'colorize' \
   'aliases' \
+  'alias-tips' \
   'vibinds' \
   'ssh' \
   'tmux' \

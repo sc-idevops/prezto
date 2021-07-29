@@ -47,3 +47,6 @@
 [submodule "contrib/q"]
 	path = contrib/q
 	url = https://github.com/cal2195/q.git
+[submodule "contrib/alias-tips"]
+	path = contrib/alias-tips
+	url = https://github.com/djui/alias-tips.git
