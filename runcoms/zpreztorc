@@ -173,7 +173,7 @@ zstyle ':prezto:module:prompt' show-return-val 'yes'
 #
 
 # Set the SSH identities to load into the agent.
-zstyle ':prezto:module:ssh:load' identities 'github_rsa'
+# zstyle ':prezto:module:ssh:load' identities 'github_rsa'
 
 #
 # Syntax Highlighting
