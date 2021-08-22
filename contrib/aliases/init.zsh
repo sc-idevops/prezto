@@ -45,3 +45,5 @@ alias rsync-move="rsync -avz --progress -h --remove-source-files"
 alias rsync-update="rsync -avzu --progress -h"
 alias rsync-synchronize="rsync -avzu --delete --progress -h"
 
+#Extra
+alias ytd="youtube-dl --restrict-filenames"
