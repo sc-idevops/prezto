@@ -8,6 +8,7 @@ alias mount='mount |column -t'
 alias df='df -H -x squashfs -x tmpfs -x devtmpfs'
 alias bat=batcat
 alias ncdu='ncdu --color dark'
+alias nvim='vim'
 
 #Shell Function aliases
 alias dirs="dirs -v"
@@ -16,7 +17,7 @@ alias jb='jobs -l'
 alias reload=". ~/.zshrc"
 
 #shortcuts aliases
-# alias please="sudo !!"
+alias please="sudo !!"
 alias ping='ping -c 5'
 alias ax="chmod a+x"
 alias wmip="curl icanhazip.com"
