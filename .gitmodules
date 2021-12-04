@@ -40,10 +40,10 @@
 	url = git://github.com/zpm-zsh/colorize
 [submodule "contrib/history-search-multi-word"]
 	path = contrib/history-search-multi-word
-	url = git://github.com/zdharma/history-search-multi-word.git
+	url = git://github.com/zdharma-continuum/history-search-multi-word.git
 [submodule "contrib/fast-syntax-highlighting"]
 	path = contrib/fast-syntax-highlighting
-	url = git://github.com/zdharma/fast-syntax-highlighting.git
+	url = git://github.com/zdharma-continuum/fast-syntax-highlighting.git
 [submodule "contrib/q"]
 	path = contrib/q
 	url = git://github.com/cal2195/q.git
