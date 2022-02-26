@@ -16,9 +16,6 @@
 [submodule "modules/prompt/external/agnoster"]
 	path = modules/prompt/external/agnoster
 	url = git://github.com/agnoster/agnoster-zsh-theme.git
-[submodule "modules/prompt/external/pure"]
-	path = modules/prompt/external/pure
-	url = git://github.com/sindresorhus/pure.git
 [submodule "modules/fasd/external"]
 	path = modules/fasd/external
 	url = git://github.com/clvv/fasd.git
