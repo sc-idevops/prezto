@@ -47,6 +47,7 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'git' \
   'fzf-tab' \
+  'archive' \
   'q' \
   'completion-gen' \
   'prompt' \
