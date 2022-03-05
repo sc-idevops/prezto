@@ -48,6 +48,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'fzf-tab' \
   'zinsults' \
+  'archive' \
   'completion-gen' \
   'prompt' \
   'fast-syntax-highlighting' \

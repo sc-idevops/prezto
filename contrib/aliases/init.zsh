@@ -6,6 +6,7 @@ else
 fi
 alias mount='mount |column -t'
 alias df='df -H -x squashfs -x tmpfs -x devtmpfs'
+alias duf='duf -hide special'
 alias bat=batcat
 alias ncdu='ncdu --color dark'
 alias nvim='vim'
