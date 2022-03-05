@@ -50,3 +50,6 @@
 [submodule "contrib/alias-tips"]
 	path = contrib/alias-tips
 	url = git://github.com/djui/alias-tips.git
+[submodule "contrib/zinsults"]
+	path = contrib/zinsults
+	url = https://github.com/ahmubashshir/zinsults
