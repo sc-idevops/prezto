@@ -1,52 +1,52 @@
 [submodule "modules/autosuggestions/external"]
 	path = modules/autosuggestions/external
-	url = git://github.com/zsh-users/zsh-autosuggestions.git
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule "modules/history-substring-search/external"]
 	path = modules/history-substring-search/external
-	url = git://github.com/zsh-users/zsh-history-substring-search.git
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
 [submodule "modules/syntax-highlighting/external"]
 	path = modules/syntax-highlighting/external
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "modules/completion/external"]
 	path = modules/completion/external
-	url = git://github.com/zsh-users/zsh-completions.git
+	url = https://github.com/zsh-users/zsh-completions.git
 [submodule "modules/prompt/external/powerline"]
 	path = modules/prompt/external/powerline
-	url = git://github.com/davidjrice/prezto_powerline.git
+	url = https://github.com/davidjrice/prezto_powerline.git
 [submodule "modules/prompt/external/agnoster"]
 	path = modules/prompt/external/agnoster
-	url = git://github.com/agnoster/agnoster-zsh-theme.git
+	url = https://github.com/agnoster/agnoster-zsh-theme.git
 [submodule "modules/fasd/external"]
 	path = modules/fasd/external
-	url = git://github.com/clvv/fasd.git
+	url = https://github.com/clvv/fasd.git
 [submodule "modules/prompt/external/async"]
 	path = modules/prompt/external/async
-	url = git://github.com/mafredri/zsh-async.git
+	url = https://github.com/mafredri/zsh-async.git
 [submodule "modules/prompt/external/powerlevel10k"]
 	path = modules/prompt/external/powerlevel10k
-	url = git://github.com/romkatv/powerlevel10k.git
+	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
 [submodule "contrib/completion-gen/external"]
 	path = contrib/completion-gen/external
-	url = git://github.com/RobSis/zsh-completion-generator.git
+	url = https://github.com/RobSis/zsh-completion-generator.git
 [submodule "contrib/fzf-tab/external"]
 	path = contrib/fzf-tab/external
-	url = git://github.com/Aloxaf/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab
 [submodule "contrib/colorize"]
 	path = contrib/colorize
-	url = git://github.com/zpm-zsh/colorize
+	url = https://github.com/zpm-zsh/colorize
 [submodule "contrib/history-search-multi-word"]
 	path = contrib/history-search-multi-word
-	url = git://github.com/zdharma-continuum/history-search-multi-word.git
+	url = https://github.com/zdharma-continuum/history-search-multi-word.git
 [submodule "contrib/fast-syntax-highlighting"]
 	path = contrib/fast-syntax-highlighting
-	url = git://github.com/zdharma-continuum/fast-syntax-highlighting.git
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
 [submodule "contrib/q"]
 	path = contrib/q
-	url = git://github.com/cal2195/q.git
+	url = https://github.com/cal2195/q.git
 [submodule "contrib/alias-tips"]
 	path = contrib/alias-tips
-	url = git://github.com/djui/alias-tips.git
+	url = https://github.com/djui/alias-tips.git
 [submodule "contrib/zinsults"]
 	path = contrib/zinsults
 	url = https://github.com/ahmubashshir/zinsults
