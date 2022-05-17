@@ -49,4 +49,4 @@ alias rsync-update="rsync -avzu --progress -h"
 alias rsync-synchronize="rsync -avzu --delete --progress -h"
 
 #Extra
-alias ytd="youtube-dl --restrict-filenames"
+alias ytd="youtube-dl --restrict-filenames -o '%(uploader)s-%(upload_date)s-%(id)s.%(ext)s'"
