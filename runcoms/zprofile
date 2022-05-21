@@ -26,7 +26,7 @@ fi
 if [[ -z "$PAGER" ]]; then
   export PAGER='less'
 fi
-
+export GIT_EDITOR=nano
 #
 # Language
 #
