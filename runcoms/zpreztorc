@@ -46,6 +46,7 @@ zstyle ':prezto:load' pmodule \
   'tmux' \
   'fasd' \
   'git' \
+  'k8s' \
   'fzf-tab' \
   'zinsults' \
   'archive' \
