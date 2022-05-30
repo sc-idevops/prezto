@@ -235,7 +235,7 @@ zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-if [[ ! -n $DISPLAY ]]; then
+if [[ ! -n $DISPLAY && ! -n $WSLENV ]]; then
   zstyle ':prezto:module:tmux:auto-start' local 'yes'
 fi
 
