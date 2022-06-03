@@ -42,11 +42,9 @@ zstyle ':prezto:load' pmodule \
   'aliases' \
   'alias-tips' \
   'vibinds' \
-  'ssh' \
   'tmux' \
   'fasd' \
   'git' \
-  'k8s' \
   'fzf-tab' \
   'zinsults' \
   'archive' \

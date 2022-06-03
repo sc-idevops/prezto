@@ -19,7 +19,6 @@ alias jb='jobs -l'
 alias reload=". ~/.zshrc"
 
 #shortcuts aliases
-alias please="sudo !!"
 alias ping='ping -c 5'
 alias ax="chmod a+x"
 alias wmip="curl icanhazip.com"
@@ -38,9 +37,10 @@ alias aptrm="sudo apt autoremove && sudo apt autoclean"
 mcd() { mkdir -p "$1"; cd "$1";} #make a directory and cd into it
 cls() { cd "$1"; ls;} #cd into directory and list contents
 md5check() { md5sum "$1" | grep "$2";} #md5sum file, compare to md5sum as second parameter
+shacheck() { sha256sum "$1" | grep "$2"; }
 
 #ssh aliases
-alias sagent="eval `ssh-agent`"
+# alias sagent="eval `ssh-agent`"
 
 #rsync aliases (from omz rsync)
 alias rsync-copy="rsync -avz --progress -h"
@@ -50,3 +50,9 @@ alias rsync-synchronize="rsync -avzu --delete --progress -h"
 
 #Extra
 alias ytd="youtube-dl --restrict-filenames -o '%(uploader)s-%(upload_date)s-%(id)s.%(ext)s'"
+
+#K8 Module
+if [[ -f "/usr/bin/kubectl" ]]; then
+  source "$ZPREZTODIR/contrib/aliases/k8s.zsh"
+fi
+
