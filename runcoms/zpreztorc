@@ -50,7 +50,7 @@ zstyle ':prezto:load' pmodule \
   'archive' \
   'completion-gen' \
   'prompt' \
-  'fast-syntax-highlighting' \
+  'F-Sy-H' \
   'history-search-multi-word' \
   'autosuggestions'
 

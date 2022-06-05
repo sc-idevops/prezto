@@ -10,9 +10,6 @@
 [submodule "modules/completion/external"]
 	path = modules/completion/external
 	url = https://github.com/zsh-users/zsh-completions.git
-[submodule "modules/prompt/external/powerline"]
-	path = modules/prompt/external/powerline
-	url = https://github.com/davidjrice/prezto_powerline.git
 [submodule "modules/prompt/external/agnoster"]
 	path = modules/prompt/external/agnoster
 	url = https://github.com/agnoster/agnoster-zsh-theme.git
@@ -22,10 +19,6 @@
 [submodule "modules/prompt/external/async"]
 	path = modules/prompt/external/async
 	url = https://github.com/mafredri/zsh-async.git
-[submodule "modules/prompt/external/powerlevel10k"]
-	path = modules/prompt/external/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
-	shallow = true
 [submodule "contrib/completion-gen/external"]
 	path = contrib/completion-gen/external
 	url = https://github.com/RobSis/zsh-completion-generator.git
@@ -38,9 +31,6 @@
 [submodule "contrib/history-search-multi-word"]
 	path = contrib/history-search-multi-word
 	url = https://github.com/zdharma-continuum/history-search-multi-word.git
-[submodule "contrib/fast-syntax-highlighting"]
-	path = contrib/fast-syntax-highlighting
-	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
 [submodule "contrib/q"]
 	path = contrib/q
 	url = https://github.com/cal2195/q.git
@@ -50,3 +40,6 @@
 [submodule "contrib/zinsults"]
 	path = contrib/zinsults
 	url = https://github.com/ahmubashshir/zinsults
+[submodule "contrib/F-Sy-H"]
+	path = contrib/F-Sy-H
+	url = https://github.com/z-shell/F-Sy-H
