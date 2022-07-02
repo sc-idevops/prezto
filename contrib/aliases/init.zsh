@@ -49,7 +49,7 @@ alias rsync-update="rsync -avzu --progress -h"
 alias rsync-synchronize="rsync -avzu --delete --progress -h"
 
 #Extra
-alias ytd="youtube-dl --restrict-filenames -o '%(uploader)s-%(upload_date)s-%(id)s.%(ext)s'"
+alias ytd="yt-dlp --restrict-filenames -o '%(uploader)s-%(upload_date)s-%(id)s.%(ext)s'"
 
 #K8 Module
 if [[ -f "/usr/bin/kubectl" ]]; then
