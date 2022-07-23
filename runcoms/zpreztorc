@@ -41,7 +41,7 @@ zstyle ':prezto:load' pmodule \
   'colorize' \
   'aliases' \
   'alias-tips' \
-  'vibinds' \
+  'vi-mode' \
   'tmux' \
   'fasd' \
   'git' \
