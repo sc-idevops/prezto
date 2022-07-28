@@ -24,9 +24,9 @@
 #
 
 # Backup root prompt for Bash.
-#if (( ! ${+SUDO_PS1} )); then
-#  export SUDO_PS1="\[\e[31;1;46m\][\u] \w \$\[\e[0m\] "
-#fi
+if (( ! ${+SUDO_PS1} )); then
+  export SUDO_PS1="\[\e[31;1;46m\][\u] \w \$\[\e[0m\] "
+fi
 
 # Load dependencies.
 pmodload 'helper'
@@ -490,4 +490,3 @@ ${prompt_garrett_color_prompt}Correct %F{red}%R${prompt_garrett_color_prompt} to
 
 prompt_garrett_setup "$@"
 # vim: ft=zsh
-
