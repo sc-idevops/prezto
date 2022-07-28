@@ -145,6 +145,9 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'garrett'
 
+# Tell prezto we can manage this prompt
+zstyle ':prezto:module:prompt' managed 'yes'
+
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
 # for longer or 'full' (with '~' expansion) for even longer prompt display.
