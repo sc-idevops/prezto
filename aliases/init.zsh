@@ -1,9 +1,9 @@
 #Readability aliases
-if which exa &> /dev/null; then
-  alias lss='exa -alh'
-else
+#if which exa &> /dev/null; then
+#  alias lss='exa -alh'
+#else
   alias lss='ls -alh --color=auto'
-fi
+#fi
 alias mount='mount |column -t'
 alias df='df -H -x squashfs -x tmpfs -x devtmpfs'
 alias duf='duf -hide special'
@@ -39,9 +39,6 @@ cls() { cd "$1"; ls;} #cd into directory and list contents
 md5check() { md5sum "$1" | grep "$2";} #md5sum file, compare to md5sum as second parameter
 shacheck() { sha256sum "$1" | grep "$2"; }
 
-#ssh aliases
-# alias sagent="eval `ssh-agent`"
-
 #rsync aliases (from omz rsync)
 alias rsync-copy="rsync -avz --progress -h"
 alias rsync-move="rsync -avz --progress -h --remove-source-files"
@@ -53,6 +50,8 @@ alias ytd="yt-dlp --restrict-filenames -o '%(uploader)s-%(upload_date)s-%(id)s.%
 
 #K8 Module
 if [[ -f "/usr/bin/kubectl" ]]; then
-  source "$ZPREZTODIR/contrib/aliases/k8s.zsh"
+  source "${ZDOTDIR:-$HOME}/.zprezto/aliases/k8s.zsh"
 fi
 
+#security
+f2b="sudo fail2ban-client status sshd"

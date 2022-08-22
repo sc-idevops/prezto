@@ -22,6 +22,8 @@ fi
 # ######
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
+# Setup Aliases
+source "${ZDOTDIR:-$HOME}/.zprezto/aliases/init.zsh"
 ##File for local overrides if you happen to need it
 if [ -f ~/.zshrc_local ]; then
       source ~/.zshrc_local
