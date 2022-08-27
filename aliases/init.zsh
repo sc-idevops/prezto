@@ -54,4 +54,4 @@ if [[ -f "/usr/bin/kubectl" ]]; then
 fi
 
 #security
-f2b="sudo fail2ban-client status sshd"
+alias f2b="sudo fail2ban-client status sshd"
