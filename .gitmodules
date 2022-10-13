@@ -43,3 +43,7 @@
 [submodule "contrib/F-Sy-H"]
 	path = contrib/F-Sy-H
 	url = https://github.com/z-shell/F-Sy-H
+[submodule "contrib/fzy/zsh-fzy"]
+	path = contrib/fzy/zsh-fzy
+	url = https://github.com/aperezdc/zsh-fzy/
+	branch = master
