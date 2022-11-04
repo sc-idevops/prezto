@@ -40,12 +40,9 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'colorize' \
   'alias-tips' \
-  'vi-mode' \
   'tmux' \
   'fasd' \
   'git' \
-  'fzy' \
-  'zinsults' \
   'archive' \
   'completion-gen' \
   'prompt' \
@@ -73,7 +70,7 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'vi'
+zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
 zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -255,4 +252,4 @@ zstyle ':prezto:module:tmux:session' name 'Φ'
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-# zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility' safe-ops 'no'
