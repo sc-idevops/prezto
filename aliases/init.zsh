@@ -1,16 +1,10 @@
 #Readability aliases
-#if which exa &> /dev/null; then
-#  alias lss='exa -alh'
-#else
-  alias lss='ls -alh --color=auto'
-#fi
+alias lss='ls -alh --color=auto'
 alias mount='mount |column -t'
-alias df='df -H -x squashfs -x tmpfs -x devtmpfs'
 alias duf='duf -hide special'
 alias lsblk='lsblk -e 7'
 alias bat=batcat
 alias ncdu='ncdu --color dark'
-alias nvim='vim'
 
 #Shell Function aliases
 alias dirs="dirs -v"
