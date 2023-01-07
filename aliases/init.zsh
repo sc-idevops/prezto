@@ -24,8 +24,8 @@ alias gitD='git diff'
 alias gitC='git commit -a'
 
 #Apt aliases
-alias aptup="sudo apt update && sudo apt full-upgrade"
-alias aptrm="sudo apt autoremove && sudo apt autoclean"
+alias aptup="sudo nala upgrade"
+alias aptrm="sudo nala autopurge && sudo apt autoclean"
 
 #Combo aliases
 mcd() { mkdir -p "$1"; cd "$1";} #make a directory and cd into it
