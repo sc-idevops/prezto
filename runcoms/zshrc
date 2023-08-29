@@ -30,3 +30,5 @@ if [ -f ~/.zshrc_local ]; then
 fi
 
 #eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
