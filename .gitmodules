@@ -22,9 +22,6 @@
 [submodule "contrib/completion-gen/external"]
 	path = contrib/completion-gen/external
 	url = https://github.com/RobSis/zsh-completion-generator.git
-[submodule "contrib/fzf-tab/external"]
-	path = contrib/fzf-tab/external
-	url = https://github.com/Aloxaf/fzf-tab
 [submodule "contrib/colorize"]
 	path = contrib/colorize
 	url = https://github.com/zpm-zsh/colorize
@@ -47,3 +44,7 @@
 	path = contrib/fzy/zsh-fzy
 	url = https://github.com/aperezdc/zsh-fzy/
 	branch = master
+[submodule "contrib/fzf"]
+	path = contrib/fzf
+	url = https://github.com/lildude/fzf-prezto
+	branch = main
