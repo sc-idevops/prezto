@@ -41,8 +41,7 @@ zstyle ':prezto:load' pmodule \
   'colorize' \
   'alias-tips' \
   'tmux' \
-  'fasd' \
-	'fzf' \
+  'fzf' \
   'git' \
   'archive' \
   'completion-gen' \
@@ -278,19 +277,19 @@ zstyle ':prezto:module:utility' safe-ops 'no'
 # zstyle ':prezto:module:fzf' fzf-default-command '<your fzf default commmand>'
 
 # Disable keybindings - default: no
-zstyle ':prezto:module:fzf' disable-key-bindings 'yes'
+#zstyle ':prezto:module:fzf' disable-key-bindings 'yes'
 
 # Disable completion - default: no
-zstyle ':prezto:module:fzf' disable-completion 'yes'
+#zstyle ':prezto:module:fzf' disable-completion 'yes'
 
 # Set height of the fzf results - default: full height
-zstyle ':prezto:module:fzf' height '30%'
+#zstyle ':prezto:module:fzf' height '30%'
 
 # Show file preview with ctrl+t and directory contents preview (needs tree) with alt-c
-zstyle ':prezto:module:fzf' preview 'yes'
+#zstyle ':prezto:module:fzf' preview 'yes'
 
 # Open fzf results in a tmux pane, if using tmux - default: no
-zstyle ':prezto:module:fzf' tmux 'yes'
+#zstyle ':prezto:module:fzf' tmux 'yes'
 
 # Order output in reverse order - default: no
 #zstyle ':prezto:module:fzf' reverse 'yes'
