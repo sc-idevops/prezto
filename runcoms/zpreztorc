@@ -37,17 +37,14 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
-  'completion' \
-  'colorize' \
-  'alias-tips' \
   'tmux' \
-  'fzf' \
+  'fasd' \
   'git' \
-  'archive' \
-  'completion-gen' \
+  'ssh' \
+  'completion' \
+  'history-substring-search' \
   'prompt' \
-  'F-Sy-H' \
-  'history-search-multi-word' \
+  'syntax-highlighting' \
   'autosuggestions'
 
 #
@@ -55,8 +52,9 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions:color' found 'fg=11'
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
 #
 # Completions
 #
@@ -76,7 +74,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
-zstyle ':prezto:module:editor' ps-context 'yes'
+#zstyle ':prezto:module:editor' ps-context 'yes'
 
 #
 # Git
@@ -151,10 +149,7 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'garrett'
-
-# Tell prezto we can manage this prompt
-zstyle ':prezto:module:prompt' managed 'yes'
+zstyle ':prezto:module:prompt' theme 'pure'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -163,7 +158,7 @@ zstyle ':prezto:module:prompt' managed 'yes'
 
 # Set the prompt to display the return code along with an indicator for non-zero
 # return codes. This is not supported by all prompts.
-zstyle ':prezto:module:prompt' show-return-val 'yes'
+# zstyle ':prezto:module:prompt' show-return-val 'yes'
 
 #
 # Python
@@ -197,7 +192,7 @@ zstyle ':prezto:module:prompt' show-return-val 'yes'
 #
 
 # Set the SSH identities to load into the agent.
-# zstyle ':prezto:module:ssh:load' identities 'github_rsa'
+# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
 
 #
 # Syntax Highlighting
@@ -206,12 +201,12 @@ zstyle ':prezto:module:prompt' show-return-val 'yes'
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
 zstyle ':prezto:module:syntax-highlighting' highlighters \
-   'main' \
-   'brackets' \
-   'pattern' \
-   'line' \
-   'cursor' \
-   'root'
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
@@ -220,8 +215,8 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 #   'function' 'bg=blue'
 #
 # Set syntax pattern styles.
-# zstyle ':prezto:module:syntax-highlighting' pattern \
-#   'rm*-rf*' 'fg=white,bold,bg=red'
+zstyle ':prezto:module:syntax-highlighting' pattern \
+  'rm*-rf*' 'fg=white,bold,bg=red'
 
 #
 # Terminal
@@ -237,16 +232,14 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 # zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 
 # Set the terminal multiplexer title format.
-zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
+# zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 
 #
 # Tmux
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-if [[ ! -n $DISPLAY && ! -n $WSLENV ]]; then
-  zstyle ':prezto:module:tmux:auto-start' local 'yes'
-fi
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 zstyle ':prezto:module:tmux:auto-start' remote 'yes'
@@ -255,7 +248,7 @@ zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 
 # Set the default session name:
-zstyle ':prezto:module:tmux:session' name 'Φ'
+# zstyle ':prezto:module:tmux:session' name 'YOUR DEFAULT SESSION NAME'
 
 #
 # Utility
@@ -265,34 +258,3 @@ zstyle ':prezto:module:tmux:session' name 'Φ'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'no'
-
-# fzf
-# Forcefully Set to fzf installation directory path - default will try to detect the correct location
-#zstyle ':prezto:module:fzf' fzf-base '/path/to/fzf/install/dir'
-
-# Set the default command to use when input is tty - default is to set it to these in the order in which they're found:
-# - `rg --files --hidden --glob "!.git/*"`
-# - `fd --type f --hidden --exclude .git`
-# - `ag -l --hidden -g "" --ignore .git`,
-# zstyle ':prezto:module:fzf' fzf-default-command '<your fzf default commmand>'
-
-# Disable keybindings - default: no
-#zstyle ':prezto:module:fzf' disable-key-bindings 'yes'
-
-# Disable completion - default: no
-#zstyle ':prezto:module:fzf' disable-completion 'yes'
-
-# Set height of the fzf results - default: full height
-#zstyle ':prezto:module:fzf' height '30%'
-
-# Show file preview with ctrl+t and directory contents preview (needs tree) with alt-c
-#zstyle ':prezto:module:fzf' preview 'yes'
-
-# Open fzf results in a tmux pane, if using tmux - default: no
-#zstyle ':prezto:module:fzf' tmux 'yes'
-
-# Order output in reverse order - default: no
-#zstyle ':prezto:module:fzf' reverse 'yes'
-
-# Set the color scheme
-zstyle ':prezto:module:fzf' color-scheme 'Solarized Dark'

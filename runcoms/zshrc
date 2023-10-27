@@ -10,25 +10,47 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+#ALIASES SECTION
+#Readability aliases
+alias lss='ls -alh --color=auto'
+alias mount='mount |column -t'
+alias duf='duf -hide special'
+alias lsblk='lsblk -e 7'
+alias bat=batcat
+alias ncdu='ncdu --color dark'
 
-# P10K Insta-Prompt
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-#
-# ######
-# # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# ######
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-#
-# Setup Aliases
-source "${ZDOTDIR:-$HOME}/.zprezto/aliases/init.zsh"
-##File for local overrides if you happen to need it
-if [ -f ~/.zshrc_local ]; then
-      source ~/.zshrc_local
-fi
+#Shell Function aliases
+alias dirs="dirs -v"
+alias h='history'
+alias jb='jobs -l'
+alias reload=". ~/.zshrc"
 
-#eval "$(starship init zsh)"
+#shortcuts aliases
+alias ping='ping -c 5'
+alias ax="chmod a+x"
+alias wmip="curl icanhazip.com"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#git aliases
+alias gitS='git status'
+alias gitL='git log'
+alias gitD='git diff'
+alias gitC='git commit -a'
+
+#Apt aliases
+alias aptup="sudo nala upgrade"
+alias aptrm="sudo nala autopurge && sudo apt autoclean"
+
+#Combo aliases
+mcd() { mkdir -p "$1"; cd "$1";} #make a directory and cd into it
+cls() { cd "$1"; ls;} #cd into directory and list contents
+md5check() { md5sum "$1" | grep "$2";} #md5sum file, compare to md5sum as second parameter
+shacheck() { sha256sum "$1" | grep "$2"; }
+
+#rsync aliases (from omz rsync)
+alias rsync-copy="rsync -avz --progress -h"
+alias rsync-move="rsync -avz --progress -h --remove-source-files"
+alias rsync-update="rsync -avzu --progress -h"
+alias rsync-synchronize="rsync -avzu --delete --progress -h"
+
+#Extra
+alias ytd="yt-dlp --restrict-filenames -o '%(uploader)s-%(upload_date)s-%(id)s.%(ext)s'"

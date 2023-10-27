@@ -212,11 +212,11 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias gpp='git pull origin "$(git-branch-current 2> /dev/null)" && git push origin "$(git-branch-current 2> /dev/null)"'
 
   # Rebase (r)
-  # alias gr='git rebase'
-  # alias gra='git rebase --abort'
-  # alias grc='git rebase --continue'
-  # alias gri='git rebase --interactive'
-  # alias grs='git rebase --skip'
+  alias gr='git rebase'
+  alias gra='git rebase --abort'
+  alias grc='git rebase --continue'
+  alias gri='git rebase --interactive'
+  alias grs='git rebase --skip'
 
   # Remote (R)
   alias gR='git remote'

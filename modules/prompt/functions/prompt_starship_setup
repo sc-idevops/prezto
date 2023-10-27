@@ -1,4 +1,0 @@
-if ! command -v starship &>/dev/null; then
-  sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-fi
-eval "$(starship init zsh)"

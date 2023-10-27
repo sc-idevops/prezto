@@ -51,7 +51,7 @@ alias scp='noglob scp'
 alias sftp='noglob sftp'
 
 # Define general aliases.
-# alias _='sudo'
+alias _='sudo'
 alias b='${(z)BROWSER}'
 
 alias diffu="diff --unified"
@@ -64,17 +64,17 @@ alias sa='alias | grep -i'
 alias type='type -a'
 
 # Safe ops. Ask the user before doing anything destructive.
-# alias cpi="${aliases[cp]:-cp} -i"
-# alias lni="${aliases[ln]:-ln} -i"
-# alias mvi="${aliases[mv]:-mv} -i"
-# alias rmi="${aliases[rm]:-rm} -i"
-# if zstyle -T ':prezto:module:utility' safe-ops; then
-  # alias cp="${aliases[cp]:-cp} -i"
-  # alias ln="${aliases[ln]:-ln} -i"
-  # alias mv="${aliases[mv]:-mv} -i"
-  # alias rm="${aliases[rm]:-rm} -i"
-# fi
-#
+alias cpi="${aliases[cp]:-cp} -i"
+alias lni="${aliases[ln]:-ln} -i"
+alias mvi="${aliases[mv]:-mv} -i"
+alias rmi="${aliases[rm]:-rm} -i"
+if zstyle -T ':prezto:module:utility' safe-ops; then
+  alias cp="${aliases[cp]:-cp} -i"
+  alias ln="${aliases[ln]:-ln} -i"
+  alias mv="${aliases[mv]:-mv} -i"
+  alias rm="${aliases[rm]:-rm} -i"
+fi
+
 # ls
 if [[ ${(@M)${(f)"$(ls --version 2>&1)"}:#*(GNU|lsd) *} ]]; then
   # GNU Core Utilities
@@ -180,8 +180,8 @@ fi
 unset _download_helper{,s}
 
 # Resource Usage
-#alias df='df -kh'
-#alias du='du -kh'
+alias df='df -kh'
+alias du='du -kh'
 
 if is-darwin || is-bsd; then
   alias topc='top -o cpu'
