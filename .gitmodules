@@ -48,3 +48,6 @@
 	path = contrib/fzf
 	url = https://github.com/lildude/fzf-prezto
 	branch = main
+[submodule "contrib/enhancd/external"]
+	path = contrib/enhancd/external
+	url = https://github.com/babarot/enhancd.git
