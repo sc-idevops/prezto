@@ -41,7 +41,7 @@ zstyle ':prezto:load' pmodule \
   'colorize' \
   'alias-tips' \
   'tmux' \
-  'fzf' \
+  'fzf-tab' \
   'git' \
   'enhancd' \
   'archive' \
@@ -163,7 +163,7 @@ zstyle ':prezto:module:prompt' managed 'yes'
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
 # for longer or 'full' (with '~' expansion) for even longer prompt display.
-# zstyle ':prezto:module:prompt' pwd-length 'short'
+zstyle ':prezto:module:prompt' pwd-length 'long'
 
 # Set the prompt to display the return code along with an indicator for non-zero
 # return codes. This is not supported by all prompts.
@@ -284,13 +284,13 @@ zstyle ':prezto:module:utility' safe-ops 'no'
 #zstyle ':prezto:module:fzf' disable-key-bindings 'yes'
 
 # Disable completion - default: no
-#zstyle ':prezto:module:fzf' disable-completion 'yes'
+zstyle ':prezto:module:fzf' disable-completion 'no'
 
 # Set height of the fzf results - default: full height
-#zstyle ':prezto:module:fzf' height '30%'
+zstyle ':prezto:module:fzf' height '30%'
 
 # Show file preview with ctrl+t and directory contents preview (needs tree) with alt-c
-#zstyle ':prezto:module:fzf' preview 'yes'
+zstyle ':prezto:module:fzf' preview 'yes'
 
 # Open fzf results in a tmux pane, if using tmux - default: no
 #zstyle ':prezto:module:fzf' tmux 'yes'

@@ -51,3 +51,6 @@
 [submodule "contrib/enhancd/external"]
 	path = contrib/enhancd/external
 	url = https://github.com/babarot/enhancd.git
+[submodule "contrib/fzf-tab"]
+	path = contrib/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab
