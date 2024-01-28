@@ -13,3 +13,6 @@ zstyle -s ":prezto:module:enhancd" command "cd"
 
 # Source module files.
 source "${0:h}/external/init.sh" || return 1
+
+# disable sort when completing `git checkout`
+zstyle ':completion:*:git-checkout:*' sort false
