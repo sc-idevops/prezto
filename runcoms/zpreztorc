@@ -26,6 +26,11 @@ zstyle ':prezto:*:*' color 'yes'
 
 # Set the Zsh functions to load (man zshcontrib).
 # zstyle ':prezto:load' zfunction 'zargs' 'zmv'
+#
+# ssh-agent configs
+zstyle :omz:plugins:ssh-agent agent-forwarding yes
+zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lazy yes
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
@@ -40,6 +45,8 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'colorize' \
   'alias-tips' \
+  'docker' \
+  'ssh-agent' \
   'tmux' \
   'fzf-tab' \
   'git' \
