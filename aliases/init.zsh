@@ -51,4 +51,4 @@ fi
 alias f2b="sudo fail2ban-client status sshd"
 
 #yt-dlp
-alias marc='yt-dlp --embed-metadata --parse-metadata "playlist_index:%(track_number)s" -x --audio-format mp3 --audio-quality 5'
+alias marc='yt-dlp --embed-metadata --parse-metadata "playlist_index:%(track_number)s" -x --audio-format mp3 --audio-quality 5 --embed-thumbnail'
