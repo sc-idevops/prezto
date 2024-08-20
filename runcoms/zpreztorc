@@ -50,7 +50,7 @@ zstyle ':prezto:load' pmodule \
   'tmux' \
   'fzf-tab' \
   'git' \
-  'enhancd' \
+  'z.lua' \
   'archive' \
   'completion-gen' \
   'prompt' \

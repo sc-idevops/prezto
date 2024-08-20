@@ -58,3 +58,6 @@
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "contrib/z.lua/external"]
+	path = contrib/z.lua/external
+	url = https://github.com/skywind3000/z.lua.git
