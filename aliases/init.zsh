@@ -25,7 +25,7 @@ alias gitD='git diff'
 alias gitC='git commit -a'
 
 #Apt aliases
-if [ $version < 24]; then
+if [ $version -lt 24 ]; then
   alias aptup="sudo nala upgrade"
 else
   alias aptup="sudo nala full-upgrade"
