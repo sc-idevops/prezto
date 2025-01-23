@@ -1,4 +1,4 @@
-version=$(lsb_release -sr)
+version=$(lsb_release -sc)
 #Readability aliases
 alias lss='ls -alh --color=auto'
 alias mount='mount |column -t'
@@ -25,7 +25,7 @@ alias gitD='git diff'
 alias gitC='git commit -a'
 
 #Apt aliases
-if [ $version -lt 24 ]; then
+if [ $version = "jammy" ]; then
   alias aptup="sudo nala upgrade"
 else
   alias aptup="sudo nala full-upgrade"
