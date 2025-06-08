@@ -18,6 +18,8 @@ alias ping='ping -c 5'
 alias ax="chmod a+x"
 alias wmip="curl icanhazip.com"
 
+alias vim=nvim
+
 #git aliases
 alias gitS='git status'
 alias gitL='git log'
