@@ -1,4 +1,3 @@
-version=$(lsb_release -sc)
 #Readability aliases
 alias lss='ls -alh --color=auto'
 alias mount='mount |column -t'
@@ -26,14 +25,6 @@ alias gitL='git log'
 alias gitD='git diff'
 alias gitC='git commit -a'
 
-#Apt aliases
-if [ $version = "jammy" ]; then
-  alias aptup="sudo nala upgrade"
-else
-  alias aptup="sudo nala full-upgrade"
-fi
-alias aptrm="sudo nala autopurge && sudo apt autoclean"
-
 #Combo aliases
 mcd() { mkdir -p "$1"; cd "$1";} #make a directory and cd into it
 cls() { cd "$1"; ls;} #cd into directory and list contents
@@ -46,7 +37,11 @@ alias rsync-move="rsync -avz --progress -h --remove-source-files"
 alias rsync-update="rsync -avzu --progress -h"
 alias rsync-synchronize="rsync -avzu --delete --progress -h"
 
-#Extra
+#security
+alias f2b="sudo fail2ban-client status sshd"
+
+#yt-dlp
+alias marc='yt-dlp --embed-metadata --parse-metadata "playlist_index:%(track_number)s" -x --audio-format mp3 --audio-quality 5 --embed-thumbnail'
 alias ytd="yt-dlp --restrict-filenames -o '%(uploader)s-%(upload_date)s-%(id)s.%(ext)s'"
 
 #K8 Module
@@ -54,8 +49,11 @@ if [[ -f "/usr/bin/kubectl" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/aliases/k8s.zsh"
 fi
 
-#security
-alias f2b="sudo fail2ban-client status sshd"
-
-#yt-dlp
-alias marc='yt-dlp --embed-metadata --parse-metadata "playlist_index:%(track_number)s" -x --audio-format mp3 --audio-quality 5 --embed-thumbnail'
+#OpenSUSE Specific
+if [[ -f "/usr/bin/zypper" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/aliases/suse.zsh"
+fi
+#Ubuntu Specific
+if [[ -f "/usr/bin/apt" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/aliases/ubu.zsh"
+fi
