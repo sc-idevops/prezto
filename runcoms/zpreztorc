@@ -42,16 +42,17 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'archive' \
+  'docker' \
+  'dpkg' \
   'completion' \
   'colorize' \
   'alias-tips' \
-  'docker' \
   'ssh-agent' \
   'tmux' \
   'fzf-tab' \
   'git' \
   'z.lua' \
-  'archive' \
   'completion-gen' \
   'prompt' \
   'F-Sy-H' \
@@ -70,8 +71,8 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 #
 
 # Set the entries to ignore in static '/etc/hosts' for host completion.
-# zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
-#   '0.0.0.0' '127.0.0.1'
+ zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
+   '0.0.0.0' '127.0.0.1'
 
 #
 # Editor
