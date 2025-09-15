@@ -61,3 +61,6 @@
 [submodule "contrib/z.lua/external"]
 	path = contrib/z.lua/external
 	url = https://github.com/skywind3000/z.lua.git
+[submodule "contrib/zsh-vi-mode"]
+	path = contrib/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode.git
