@@ -1,3 +1,4 @@
+sudoedit='sudo -E /home/$USER/bin/nvim'
 #Readability aliases
 alias lss='ls -alh --color=auto'
 alias mount='mount |column -t'
