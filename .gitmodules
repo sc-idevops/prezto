@@ -15,7 +15,7 @@
 	url = https://github.com/agnoster/agnoster-zsh-theme.git
 [submodule "modules/fasd/external"]
 	path = modules/fasd/external
-	url = https://github.com/clvv/fasd.git
+	url = https://github.com/whjvenyl/fasd.git
 [submodule "modules/prompt/external/async"]
 	path = modules/prompt/external/async
 	url = https://github.com/mafredri/zsh-async.git
