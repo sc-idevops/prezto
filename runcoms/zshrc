@@ -38,3 +38,6 @@ function list_all() {
 if [[ ${chpwd_functions[(r)list_all]} != "list_all" ]];then
   chpwd_functions=(${chpwd_functions[@]} "list_all")
 fi
+
+#attempts to prevent issues with moving *.extension commands
+setopt no_bare_glob_qual
