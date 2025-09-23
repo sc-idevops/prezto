@@ -34,23 +34,13 @@
 [submodule "contrib/alias-tips"]
 	path = contrib/alias-tips
 	url = https://github.com/djui/alias-tips.git
-[submodule "contrib/zinsults"]
-	path = contrib/zinsults
-	url = https://github.com/ahmubashshir/zinsults
 [submodule "contrib/F-Sy-H"]
 	path = contrib/F-Sy-H
 	url = https://github.com/z-shell/F-Sy-H
-[submodule "contrib/fzy/zsh-fzy"]
-	path = contrib/fzy/zsh-fzy
-	url = https://github.com/aperezdc/zsh-fzy/
-	branch = master
 [submodule "contrib/fzf"]
 	path = contrib/fzf
 	url = https://github.com/lildude/fzf-prezto
 	branch = main
-[submodule "contrib/enhancd/external"]
-	path = contrib/enhancd/external
-	url = https://github.com/babarot/enhancd.git
 [submodule "contrib/fzf-tab"]
 	path = contrib/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab
