@@ -50,7 +50,6 @@ zstyle ':prezto:load' pmodule \
   'alias-tips' \
   'ssh-agent' \
   'tmux' \
-  'fzf-tab' \
   'git' \
   'z.lua' \
   'completion-gen' \
