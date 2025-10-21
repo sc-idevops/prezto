@@ -53,7 +53,6 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'z.lua' \
   'completion-gen' \
-  'zsh-vi-mode' \
   'prompt' \
   'F-Sy-H' \
   'history-search-multi-word' \
@@ -82,7 +81,7 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 # zstyle ':prezto:module:editor' wordchars '*?_-.[]~&;!#$%^(){}<>'
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'vi'
+zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
 zstyle ':prezto:module:editor' dot-expansion 'yes'
