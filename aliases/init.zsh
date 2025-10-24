@@ -19,6 +19,7 @@ alias ax="chmod a+x"
 alias wmip="curl icanhazip.com"
 
 alias vim=nvim
+alias mc="SHELL=/bin/bash mc"
 
 #git aliases
 alias gitS='git status'
