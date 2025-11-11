@@ -50,12 +50,12 @@ zstyle ':prezto:load' pmodule \
   'alias-tips' \
   'ssh-agent' \
   'tmux' \
+  'fzf-tab' \
   'git' \
   'z.lua' \
   'completion-gen' \
   'prompt' \
   'F-Sy-H' \
-  'history-search-multi-word' \
   'autosuggestions'
 
 #
@@ -286,3 +286,9 @@ zstyle ':completion:*:descriptions' format '[%d]'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
+
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+# force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
+zstyle ':completion:*' menu no
+# preview directory's content with eza when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -1 --color=always $realpath'
