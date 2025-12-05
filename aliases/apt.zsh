@@ -6,4 +6,4 @@ else
   alias aptup="sudo nala full-upgrade"
 fi
 alias aptrm="sudo nala autopurge && sudo apt autoclean"
-
+alias aptchk="sudo apt update; sudo apt list --upgradable"

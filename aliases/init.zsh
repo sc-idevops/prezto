@@ -57,5 +57,5 @@ if [[ -f "/usr/bin/zypper" ]]; then
 fi
 #Ubuntu Specific
 if [[ -f "/usr/bin/apt" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/aliases/ubu.zsh"
+  source "${ZDOTDIR:-$HOME}/.zprezto/aliases/apt.zsh"
 fi
