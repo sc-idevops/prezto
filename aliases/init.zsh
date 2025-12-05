@@ -4,7 +4,6 @@ alias lss='ls -alh --color=auto'
 alias mount='mount |column -t'
 alias duf='duf -hide special'
 alias lsblk='lsblk -e 7'
-alias bat=batcat
 alias ncdu='ncdu --color dark'
 
 #Shell Function aliases
