@@ -54,3 +54,6 @@
 [submodule "contrib/zsh-vi-mode"]
 	path = contrib/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode.git
+[submodule "modules/prompt/external/pure"]
+	path = modules/prompt/external/pure
+	url = https://github.com/sindresorhus/pure.git
